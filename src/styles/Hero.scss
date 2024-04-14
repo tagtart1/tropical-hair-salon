@@ -5,7 +5,7 @@
   background-position: center;
   background-size: cover;
   width: 100%;
-  height: 85vh; // TWEAK numbers if we need the hero to take up 100vh or just have it include the nav, whatever lara needs
+  height: 100%;
   background-attachment: fixed; // Change if lara despises this
   display: flex;
   justify-content: center;
@@ -15,16 +15,30 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    height: 70%;
-
+    gap: 120px;
+    align-items: center;
+    text-align: center;
     .hero-text {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
       .big {
         font-size: 160px;
         color: $light-pink;
       }
       .small {
         color: $white;
+        font-size: 64px;
       }
+    }
+
+    .cta-btn {
+      color: $light-green;
+      padding: 24px 64px;
+      border-radius: 20px;
+      text-align: center;
+      font-size: 24px;
+      border: none;
     }
   }
 }

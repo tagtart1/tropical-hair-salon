@@ -1,0 +1,28 @@
+@import "variables.scss";
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: $light-green;
+  padding-top: 20px;
+  .footer-content {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1400px;
+    align-items: center;
+    img {
+      max-width: 400px;
+    }
+
+    .misc-info {
+      display: flex;
+      color: $light-pink;
+      gap: 52px;
+      text-align: right;
+      font-size: 28px;
+      font-weight: 100;
+    }
+  }
+}

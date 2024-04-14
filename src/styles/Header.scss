@@ -5,7 +5,7 @@ header {
   padding: 4px 12px;
 
   .logo {
-    max-width: 275px;
+    max-width: 220px;
   }
   nav {
     display: flex;
@@ -14,7 +14,7 @@ header {
       align-items: center;
       display: flex;
       color: $light-green;
-      font-size: 32px;
+      font-size: 24px;
       width: 100%;
       max-width: 1920px;
       justify-content: space-around;

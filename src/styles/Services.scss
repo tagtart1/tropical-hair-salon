@@ -1,0 +1,53 @@
+@import "variables.scss";
+
+.services-section {
+  background-color: $light-pink;
+  color: $light-green;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  .content {
+    display: flex;
+    justify-content: center;
+
+    height: 100%;
+    flex-direction: column;
+    width: 100%;
+    max-width: 1200px;
+
+    h1 {
+      font-size: 48px;
+      text-align: left;
+      margin-bottom: 32px;
+    }
+
+    .special-info {
+      font-size: 28px;
+      margin-bottom: 48px;
+    }
+
+    .services-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      row-gap: 54px;
+      column-gap: auto;
+      .service-category-list {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        h2 {
+          font-weight: normal;
+          font-size: 42px;
+        }
+        ul {
+          font-weight: thin;
+          font-size: 28px;
+          display: flex;
+          flex-direction: column;
+          gap: 16px;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,105 @@
+@import "variables.scss";
+
+.appointment-section {
+  height: 100vh;
+  background-color: $light-green;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  .content {
+    width: 100%;
+    max-width: 1030px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .top-text {
+      h1 {
+        text-align: center;
+        color: $light-pink;
+        font-size: 74px;
+        margin-bottom: 24px;
+      }
+      p {
+        color: $white;
+        font-size: 28px;
+        font-weight: 100;
+        line-height: 1.3;
+        text-align: center;
+      }
+    }
+
+    form {
+      width: 100%;
+      background-color: $white;
+      max-width: 800px;
+      margin-top: 24px;
+      padding: 30px 42px;
+      border-radius: 48px;
+      column-gap: 38px;
+      row-gap: 16px;
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+
+      .form-group {
+        display: flex;
+        flex-direction: column;
+        gap: 2px;
+        min-width: 0;
+
+        label {
+          color: $light-green;
+          font-size: 21px;
+          font-weight: normal;
+          margin-left: 8px;
+        }
+        input,
+        select {
+          border: 4px solid rgb(213, 201, 189);
+          font-size: 20px;
+          height: 48px;
+          border-radius: 12px;
+          background-color: $white;
+          color: $light-green;
+          padding-left: 8px;
+          min-width: 0;
+        }
+
+        input:focus,
+        select:focus,
+        textarea:focus {
+          outline-color: rgb(148, 137, 126);
+        }
+
+        textarea {
+          border: 4px solid rgb(213, 201, 189);
+          font-size: 20px;
+          border-radius: 12px;
+          resize: none;
+          background-color: $white;
+          color: $light-green;
+          padding-left: 8px;
+        }
+      }
+
+      .name-group {
+        grid-column: span 4;
+      }
+      .phone-group {
+        grid-column: span 3;
+      }
+
+      .time-group {
+        grid-column: span 2;
+      }
+
+      .service-group {
+        grid-column: span 3;
+      }
+
+      .notes-group {
+        grid-column: span 7;
+      }
+    }
+  }
+}
