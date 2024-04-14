@@ -1,0 +1,26 @@
+@import "variables";
+
+header {
+  background-color: $light-pink;
+  padding: 4px 12px;
+
+  .logo {
+    max-width: 275px;
+  }
+  nav {
+    display: flex;
+    justify-content: center;
+    ul {
+      align-items: center;
+      display: flex;
+      color: $light-green;
+      font-size: 32px;
+      width: 100%;
+      max-width: 1920px;
+      justify-content: space-around;
+
+      li {
+      }
+    }
+  }
+}

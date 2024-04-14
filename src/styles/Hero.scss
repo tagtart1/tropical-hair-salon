@@ -1,0 +1,30 @@
+@import "variables.scss";
+
+#hero-section {
+  background-image: url("../images//hero-photo.jpg");
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 85vh; // TWEAK numbers if we need the hero to take up 100vh or just have it include the nav, whatever lara needs
+  background-attachment: fixed; // Change if lara despises this
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 70%;
+
+    .hero-text {
+      .big {
+        font-size: 160px;
+        color: $light-pink;
+      }
+      .small {
+        color: $white;
+      }
+    }
+  }
+}
