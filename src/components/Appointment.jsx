@@ -3,7 +3,7 @@ import "../styles/Appointment.scss";
 
 const Appointment = () => {
   return (
-    <section className="appointment-section">
+    <section className="appointment-section" id="booking">
       <div className="content">
         <div className="top-text">
           <h1>Book your Appointment Now</h1>

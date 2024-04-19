@@ -10,7 +10,7 @@ header {
   nav {
     display: flex;
     justify-content: center;
-    ul {
+    .desktop-nav {
       align-items: center;
       display: flex;
       color: $light-green;
@@ -20,7 +20,32 @@ header {
       justify-content: space-around;
 
       li {
+        a {
+          text-decoration: none;
+          color: inherit;
+        }
       }
+    }
+  }
+
+  .mobile-nav-closed {
+    display: none;
+  }
+}
+
+@media (max-width: 900px) {
+  header {
+    nav {
+      .desktop-nav {
+        display: none;
+      }
+      .mobile-nav-closed-setup {
+        display: flex;
+        justify-content: space-between;
+      }
+    }
+    .logo {
+      width: 100%;
     }
   }
 }

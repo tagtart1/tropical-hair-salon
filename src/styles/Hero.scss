@@ -42,3 +42,34 @@
     }
   }
 }
+
+@media (max-width: 900px) {
+  #hero-section {
+    .content {
+      gap: 48px;
+      .hero-text {
+        .big {
+          font-size: 90px;
+        }
+        .small {
+          font-size: 48px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 500px) {
+  #hero-section {
+    .content {
+      .hero-text {
+        .big {
+          font-size: 72px;
+        }
+        .small {
+          font-size: 32px;
+        }
+      }
+    }
+  }
+}
