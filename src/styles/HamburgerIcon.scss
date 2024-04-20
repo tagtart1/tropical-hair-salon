@@ -1,4 +1,44 @@
 @import "variables.scss";
 
 #hamburger-icon {
+  display: flex;
+  flex-direction: column;
+  gap: $bar-gap;
+  margin: 24px;
+}
+
+#hamburger-icon input,
+#hamburger-icon::before,
+#hamburger-icon::after {
+  content: "";
+  width: $bar-width;
+  height: $bar-height;
+  background-color: $light-green;
+  transition: opacity 0.2s ease-in-out, width 0.2s ease-in-out,
+    transform 0.2s ease-in-out;
+
+  transform-origin: left center;
+}
+
+#hamburger-icon input:checked {
+  opacity: 0;
+  width: 0;
+}
+
+#hamburger-icon:has(input:checked)::before {
+  transform: rotate(45deg);
+  width: $bar-open-width;
+}
+
+#hamburger-icon:has(input:checked)::after {
+  transform: rotate(-45deg);
+  width: $bar-open-width;
+}
+
+#hamburger-icon input {
+  appearance: none;
+  margin: 0;
+  padding: 0;
+  outline: none;
+  pointer-events: none;
 }

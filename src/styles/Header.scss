@@ -28,7 +28,7 @@ header {
     }
   }
 
-  .mobile-nav-closed {
+  .mobile-nav-closed-setup {
     display: none;
   }
 }
@@ -40,6 +40,7 @@ header {
         display: none;
       }
       .mobile-nav-closed-setup {
+        width: 100%;
         display: flex;
         justify-content: space-between;
       }
