@@ -18,9 +18,10 @@
       background-color: $light-pink-overlay;
     }
     .salon-photo {
-      margin-bottom: -100px;
-      margin-top: -100px;
+      margin-bottom: -2px;
+      max-height: 80vh;
       width: 100vw;
+      object-fit: cover;
     }
   }
 }

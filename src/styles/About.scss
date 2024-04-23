@@ -1,18 +1,18 @@
 @import "variables.scss";
 .about-section {
   background-color: $white;
-  height: 100vh;
+  min-height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 0px 32px;
+  padding: 32px 32px;
   .content {
     color: $light-green;
     display: flex;
     flex-direction: column;
     gap: 32px;
     max-width: 1100px;
-    height: 650px;
+
     h1 {
       color: $dark-pink;
       font-size: 60px;
@@ -31,6 +31,9 @@
 }
 @media (max-width: 1024px) {
   .about-section {
+    height: auto;
+    max-height: none;
+    padding: 32px;
     .content {
       gap: 20px;
       h1 {
@@ -46,6 +49,8 @@
 
 @media (max-width: 768px) {
   .about-section {
+    height: auto;
+    max-height: none;
     .content {
       gap: 16px;
       h1 {

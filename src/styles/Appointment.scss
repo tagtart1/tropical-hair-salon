@@ -1,12 +1,13 @@
 @import "variables.scss";
 
 .appointment-section {
-  height: 100vh;
+  min-height: 100vh;
   background-color: $light-green;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  padding: 32px;
   .content {
     width: 100%;
     max-width: 1030px;
@@ -99,6 +100,108 @@
 
       .notes-group {
         grid-column: span 7;
+      }
+    }
+  }
+}
+
+@media (max-width: 1024px) {
+  .appointment-section {
+    .content {
+      .top-text {
+        h1 {
+          text-align: left;
+          font-size: 54px;
+        }
+        p {
+          text-align: left;
+        }
+      }
+
+      form {
+        grid-template-columns: repeat(8, 1fr);
+        .form-group {
+          label {
+          }
+          input,
+          select {
+          }
+
+          input:focus,
+          select:focus,
+          textarea:focus {
+          }
+
+          textarea {
+          }
+        }
+
+        .name-group {
+          grid-column: span 8;
+        }
+        .phone-group {
+          grid-column: span 6;
+        }
+
+        .time-group {
+          grid-column: span 4;
+        }
+
+        .service-group {
+          grid-column: span 6;
+        }
+
+        .notes-group {
+          grid-column: span 8;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .appointment-section {
+    .content {
+      .top-text {
+        h1 {
+          font-size: 40px;
+        }
+        p {
+          font-size: 17px;
+        }
+      }
+
+      form {
+        .form-group {
+          label {
+          }
+          input,
+          select {
+          }
+
+          input:focus,
+          select:focus,
+          textarea:focus {
+          }
+
+          textarea {
+            height: 80px;
+          }
+        }
+
+        .name-group {
+        }
+        .phone-group {
+        }
+
+        .time-group {
+        }
+
+        .service-group {
+        }
+
+        .notes-group {
+        }
       }
     }
   }

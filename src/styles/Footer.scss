@@ -5,7 +5,8 @@ footer {
   justify-content: center;
   align-items: center;
   background-color: $light-green;
-  padding-top: 20px;
+
+  padding: 20px;
   .footer-content {
     display: flex;
     justify-content: space-between;
@@ -23,6 +24,54 @@ footer {
       text-align: right;
       font-size: 28px;
       font-weight: 100;
+    }
+  }
+}
+
+@media (max-width: 1024px) {
+  footer {
+    .footer-content {
+      flex-direction: column;
+      gap: 32px;
+      img {
+        max-width: 350px;
+      }
+
+      .misc-info {
+        text-align: center;
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  footer {
+    .footer-content {
+      flex-direction: column;
+      gap: 24px;
+      img {
+        max-width: 250px;
+      }
+
+      .misc-info {
+        gap: 24px;
+        font-size: 22px;
+      }
+    }
+  }
+}
+
+@media (max-width: 400px) {
+  footer {
+    .footer-content {
+      img {
+        max-width: 250px;
+      }
+
+      .misc-info {
+        gap: 16px;
+        font-size: 18px;
+      }
     }
   }
 }
