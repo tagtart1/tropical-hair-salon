@@ -5,7 +5,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-
+  padding: 0px 32px;
   .content {
     color: $light-green;
     display: flex;
@@ -25,6 +25,35 @@
       strong {
         font-weight: 500;
         color: $dark-green;
+      }
+    }
+  }
+}
+@media (max-width: 1024px) {
+  .about-section {
+    .content {
+      gap: 20px;
+      h1 {
+        font-size: 48px;
+        margin-bottom: 0px;
+      }
+      p {
+        font-size: 20px;
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .about-section {
+    .content {
+      gap: 16px;
+      h1 {
+        font-size: 28px;
+        margin-bottom: 0px;
+      }
+      p {
+        font-size: 17px;
       }
     }
   }

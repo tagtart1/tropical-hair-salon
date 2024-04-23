@@ -5,6 +5,8 @@
   flex-direction: column;
   gap: $bar-gap;
   margin: 24px;
+  height: fit-content;
+  z-index: 2;
 }
 
 #hamburger-icon input,
@@ -14,24 +16,28 @@
   width: $bar-width;
   height: $bar-height;
   background-color: $light-green;
-  transition: opacity 0.2s ease-in-out, width 0.2s ease-in-out,
-    transform 0.2s ease-in-out;
+  transition: all 0.4s;
 
-  transform-origin: left center;
+  transform-origin: right center;
+  will-change: transform;
+  pointer-events: none;
+}
+
+#hamburger-icon input {
+  transform-origin: center;
 }
 
 #hamburger-icon input:checked {
-  opacity: 0;
-  width: 0;
+  transform: scaleX(0);
 }
 
 #hamburger-icon:has(input:checked)::before {
-  transform: rotate(45deg);
+  transform: rotate(-40deg);
   width: $bar-open-width;
 }
 
 #hamburger-icon:has(input:checked)::after {
-  transform: rotate(-45deg);
+  transform: rotate(40deg);
   width: $bar-open-width;
 }
 

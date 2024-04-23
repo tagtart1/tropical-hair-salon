@@ -2,7 +2,8 @@
 
 header {
   background-color: $light-pink;
-  padding: 4px 12px;
+  padding: 0px 12px;
+  position: relative;
 
   .logo {
     max-width: 220px;
@@ -47,6 +48,16 @@ header {
     }
     .logo {
       width: 100%;
+      max-width: 300px;
     }
+  }
+}
+
+@media (max-width: 450px) {
+  header {
+    .logo {
+      max-width: 220px;
+    }
+    height: 150px;
   }
 }
