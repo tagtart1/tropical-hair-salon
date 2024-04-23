@@ -173,6 +173,7 @@
 
       form {
         padding: 20px 28px;
+        column-gap: 16px;
         .form-group {
           label {
             font-size: 18px;
@@ -185,6 +186,7 @@
 
           input[type="date"] {
             appearance: none;
+            font-size: 15px;
           }
 
           input:focus,
