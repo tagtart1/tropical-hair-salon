@@ -183,6 +183,10 @@
             font-size: 17px;
           }
 
+          input[type="date"] {
+            height: 40px;
+          }
+
           input:focus,
           select:focus,
           textarea:focus {
