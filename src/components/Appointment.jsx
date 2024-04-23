@@ -25,7 +25,7 @@ const Appointment = () => {
           </div>
           <div className="form-group time-group">
             <label htmlFor="date">Choose Date</label>
-            <input type="date" id="date" name="date" />
+            <TimeSelect />
           </div>
           <div className="form-group time-group">
             <label htmlFor="time">Choose Time</label>
