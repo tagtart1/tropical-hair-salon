@@ -1,5 +1,6 @@
 import React from "react";
 import "../styles/Appointment.scss";
+import TimeSelect from "./TimeSelect";
 
 const Appointment = () => {
   return (
@@ -28,7 +29,7 @@ const Appointment = () => {
           </div>
           <div className="form-group time-group">
             <label htmlFor="time">Choose Time</label>
-            <input type="text" id="time" name="time" />
+            <TimeSelect />
           </div>
           <div className="form-group service-group">
             <label htmlFor="service">Service</label>

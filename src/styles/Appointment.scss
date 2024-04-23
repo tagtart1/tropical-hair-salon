@@ -172,11 +172,15 @@
       }
 
       form {
+        padding: 20px 28px;
         .form-group {
           label {
+            font-size: 18px;
           }
           input,
           select {
+            height: 40px;
+            font-size: 17px;
           }
 
           input:focus,
