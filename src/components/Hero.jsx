@@ -9,7 +9,9 @@ const Hero = () => {
           <p className="big">Relaxation</p>
           <p className="small">Starts Here</p>
         </div>
-        <button className="cta-btn">Book Now</button>
+        <a href="#booking">
+          <button className="cta-btn">Book Now</button>
+        </a>
       </div>
     </section>
   );
