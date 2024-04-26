@@ -13,36 +13,63 @@ const Services = () => {
           <div className="service-category-list">
             <h2>CUTS</h2>
             <ul>
-              <li>Mens's cut | $12*</li>
-              <li>Women's cut | $20</li>
-              <li>Children's cut | $7</li>
-              <li>Trim + style | $15</li>
+              <li>
+                Men's cut <span>$12*</span>
+              </li>
+              <li>
+                Women's cut <span>$20</span>
+              </li>
+              <li>
+                Children's cut <span>$7</span>
+              </li>
             </ul>
           </div>
           <div className="service-category-list">
             <h2>STYLING</h2>
             <ul>
-              <li>Flat iron | $20</li>
-              <li>Perm | $55</li>
-              <li>Updo | $65</li>
+              <li>
+                Flat iron <span>$20</span>
+              </li>
+              <li>
+                Perm <span>$55</span>
+              </li>
+              <li>
+                Updo <span>$65</span>
+              </li>
             </ul>
           </div>
           <div className="service-category-list">
             <h2>COLORING</h2>
             <ul>
-              <li>Root touch-up | $25</li>
-              <li>Highlights/Lowlights | $35</li>
-              <li>Full color | $45</li>
-              <li>Balayage/Ombre | $50</li>
+              <li>
+                Root touch-up <span>$25</span>
+              </li>
+              <li>
+                Highlights/Lowlights <span>$35</span>
+              </li>
+              <li>
+                Full color <span>$45</span>
+              </li>
+              <li>
+                Balayage/Ombre <span>$50</span>
+              </li>
             </ul>
           </div>
           <div className="service-category-list">
             <h2>ADDITIONAL SERVICES</h2>
             <ul>
-              <li>Beard trim | $8</li>
-              <li>Mustache trim | $8</li>
-              <li>Eyebrow wax | $3</li>
-              <li>Ear trim | $3</li>
+              <li>
+                Beard trim <span>$8</span>
+              </li>
+              <li>
+                Mustache trim <span>$8</span>
+              </li>
+              <li>
+                Eyebrow wax <span>$3</span>
+              </li>
+              <li>
+                Ear trim <span>$3</span>
+              </li>
             </ul>
           </div>
         </div>

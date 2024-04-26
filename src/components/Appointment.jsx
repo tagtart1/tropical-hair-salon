@@ -1,7 +1,7 @@
 import React from "react";
 import "../styles/Appointment.scss";
 import TimeSelect from "./TimeSelect";
-
+import FormArrow from "../images/FormArrow";
 const Appointment = () => {
   return (
     <section className="appointment-section" id="booking">
@@ -43,6 +43,7 @@ const Appointment = () => {
           <div className="form-group  notes-group">
             <label htmlFor="notes">Notes</label>
             <textarea name="notes" id="notes" cols="30" rows="5"></textarea>
+            <FormArrow />
           </div>
         </form>
       </div>

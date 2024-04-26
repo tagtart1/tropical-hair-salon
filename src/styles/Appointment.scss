@@ -72,6 +72,13 @@
           outline-color: rgb(148, 137, 126);
         }
 
+        input[type="date"]::-webkit-calendar-picker-indicator {
+        }
+        input[type="date"] {
+          appearance: none;
+          font-size: 15px;
+        }
+
         textarea {
           border: 4px solid rgb(213, 201, 189);
           font-size: 20px;
@@ -182,11 +189,6 @@
           select {
             height: 40px;
             font-size: 17px;
-          }
-
-          input[type="date"] {
-            appearance: none;
-            font-size: 15px;
           }
 
           input:focus,
