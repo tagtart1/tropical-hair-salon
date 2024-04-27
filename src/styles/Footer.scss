@@ -5,8 +5,11 @@ footer {
   justify-content: center;
   align-items: center;
   background-color: $light-green;
-
+  font-family: muli, sans-serif;
+  font-weight: 400;
+  font-style: normal;
   padding: 20px;
+
   .footer-content {
     display: flex;
     justify-content: space-between;
@@ -22,14 +25,14 @@ footer {
       color: $light-pink;
       gap: 52px;
       text-align: right;
-      font-size: 28px;
-      font-weight: 100;
+      font-size: 24px;
     }
   }
 }
 
 @media (max-width: 1024px) {
   footer {
+    padding-top: 40px;
     .footer-content {
       flex-direction: column;
       gap: 32px;
@@ -39,6 +42,14 @@ footer {
 
       .misc-info {
         text-align: center;
+        flex-direction: row-reverse;
+        .address-contact {
+          text-align: right;
+        }
+
+        .hours {
+          text-align: left;
+        }
       }
     }
   }
@@ -48,14 +59,15 @@ footer {
   footer {
     .footer-content {
       flex-direction: column;
-      gap: 24px;
+
       img {
-        max-width: 250px;
+        max-width: 275px;
       }
 
       .misc-info {
         gap: 24px;
-        font-size: 22px;
+        font-size: 18px;
+        line-height: 1.2;
       }
     }
   }
@@ -65,7 +77,6 @@ footer {
   footer {
     .footer-content {
       img {
-        max-width: 250px;
       }
 
       .misc-info {

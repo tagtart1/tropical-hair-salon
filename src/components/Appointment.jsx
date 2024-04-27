@@ -15,36 +15,38 @@ const Appointment = () => {
           </p>
         </div>
         <form action="">
-          <div className="form-group name-group">
-            <label htmlFor="name">Name</label>
-            <input type="text" id="name" name="name" />
-          </div>
-          <div className="form-group phone-group">
-            <label htmlFor="phone">Phone</label>
-            <input type="tel" id="phone" name="phone" />
-          </div>
-          <div className="form-group time-group">
-            <label htmlFor="date">Choose Date</label>
-            <input type="date" id="date" name="date" />
-          </div>
-          <div className="form-group time-group">
-            <label htmlFor="time">Choose Time</label>
-            <TimeSelect />
-          </div>
-          <div className="form-group service-group">
-            <label htmlFor="service">Service</label>
+          <div className="inputs-container">
+            <div className="form-group name-group">
+              <label htmlFor="name">Name</label>
+              <input type="text" id="name" name="name" />
+            </div>
+            <div className="form-group phone-group">
+              <label htmlFor="phone">Phone</label>
+              <input type="tel" id="phone" name="phone" />
+            </div>
+            <div className="form-group time-group">
+              <label htmlFor="date">Choose Date</label>
+              <input type="date" id="date" name="date" />
+            </div>
+            <div className="form-group time-group">
+              <label htmlFor="time">Choose Time</label>
+              <TimeSelect />
+            </div>
+            <div className="form-group service-group">
+              <label htmlFor="service">Service</label>
 
-            <select name="service" id="service">
-              <option value="" hidden></option>
-              <option value="test">test</option>
-              <option value="test2">test2</option>
-            </select>
+              <select name="service" id="service">
+                <option value="" hidden></option>
+                <option value="test">test</option>
+                <option value="test2">test2</option>
+              </select>
+            </div>
+            <div className="form-group  notes-group">
+              <label htmlFor="notes">Notes</label>
+              <textarea name="notes" id="notes" cols="30" rows="3"></textarea>
+            </div>
           </div>
-          <div className="form-group  notes-group">
-            <label htmlFor="notes">Notes</label>
-            <textarea name="notes" id="notes" cols="30" rows="5"></textarea>
-            <FormArrow />
-          </div>
+          <button type="submit">BOOK NOW</button>
         </form>
       </div>
     </section>

@@ -70,15 +70,30 @@
   }
 }
 
-@media (max-width: 500px) {
+@media (max-width: 768px) {
   #hero-section {
     .content {
       .hero-text {
         .big {
-          font-size: 72px;
+          font-size: 54px;
         }
         .small {
-          font-size: 32px;
+          font-size: 28px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 368px) {
+  #hero-section {
+    .content {
+      .hero-text {
+        .big {
+          font-size: 48px;
+        }
+        .small {
+          font-size: 24px;
         }
       }
     }
