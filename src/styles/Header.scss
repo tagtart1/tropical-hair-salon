@@ -58,8 +58,25 @@ header {
 @media (max-width: 450px) {
   header {
     .logo {
-      max-width: 220px;
+      width: 100%;
+      max-width: 275px;
     }
-    height: 150px;
+    height: 140px;
+  }
+}
+
+@media (max-width: 400px) {
+  header {
+    .logo {
+      max-width: 250px;
+    }
+  }
+}
+
+@media (max-width: 350px) {
+  header {
+    .logo {
+      max-width: 225px;
+    }
   }
 }
