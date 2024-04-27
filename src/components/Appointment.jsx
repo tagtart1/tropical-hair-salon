@@ -1,7 +1,7 @@
 import React from "react";
 import "../styles/Appointment.scss";
 import TimeSelect from "./TimeSelect";
-import FormArrow from "../images/FormArrow";
+
 const Appointment = () => {
   return (
     <section className="appointment-section" id="booking">
