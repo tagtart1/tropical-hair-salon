@@ -6,7 +6,7 @@ const Hero = () => {
     <section id="hero-section">
       <div className="content">
         <div className="hero-text">
-          <p className="big">Relaxation</p>
+          <p className="big">relaxation</p>
           <p className="small">Starts Here</p>
         </div>
         <a href="#booking">
